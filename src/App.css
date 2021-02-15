@@ -1,5 +1,74 @@
 .App {
+  min-height: 100vh;
+  background: #467494;
+  display: normal;
+  justify-content: space-around;
+  align-items: center;
   text-align: center;
+   
+}
+
+.tweet{
+ 
+  height: 90%;  
+  width:max-content;
+  border-radius: 30px;
+  display: normal;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  margin: 0 auto;
+  background: whitesmoke;
+  justify-content: space-around;
+
+  
+}
+
+.tweet2{
+  color: aliceblue;
+  height: 90%;  
+  border-radius: 30px;
+  display: normal;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  margin: 0 auto;
+  width:max-content;
+  justify-content: space-around;
+}
+
+.tweet3{
+  background: rgb(161, 231, 167); 
+  height: 90%;  
+  border-radius: 30px;
+  display: normal;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  margin: 0 auto;
+  width:max-content;
+  justify-content: space-around;
+}
+
+.button{
+  background: rgb(64, 223, 16); 
+  font-size: 20px;
+  height: 90%;  
+  border-radius: 30px;
+  border: none;
+  display: normal;
+  align-items: center;
+  text-align: center;
+  padding: 2%;
+  margin: 0 auto;
+  justify-content: space-around;
+  width:max-content;
+}
+
+button:hover {
+  color: white;
+  background: rgb(64, 254, 16); 
+  cursor: pointer;
 }
 
 .App-logo {
@@ -12,7 +81,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -20,3 +89,4 @@
 .App-link {
   color: #09d3ac;
 }
+

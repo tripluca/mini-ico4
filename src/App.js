@@ -10,6 +10,7 @@ import getWeb3 from "./getWeb3";
 
 import "./App.css";
 
+
 class App extends Component {
   state = { loaded: false, kycAddress: "0x123", tokenSaleAddress: "", userTokens: 0};
   
@@ -57,6 +58,8 @@ class App extends Component {
     }
     
   };
+
+  
 
   runExample = async () => {
     const { accounts, contract } = this.state;
@@ -107,35 +110,50 @@ class App extends Component {
       return <div>Loading Web3, accounts, and contract...</div>;
     }
     return (
+      
       <div className="App">
-        <img src="https://gateway.pinata.cloud/ipfs/QmVxZCAvxab8bUhaScwqw6NWABmqz4jmjJ3qnYUbdKweEf/trips_T_logo256x256.png" alt="logo" width="100px"></img>
-        <br />
-       <h1>Buy the Token</h1>
-    
-       <br />
-        {/*
-         <h2>Whitelist address (admin only)</h2> 
-<input type="text" name="kycAddress" value={this.state.kycAddress}
-onChange={this.handleInputChange} />
-<button type="button" onClick={this.handleKycSubmit}>Add Address to Whitelist</button>
-    */}
 
-<h1>Exchange rate is: 1000 TRIPS2 for 1 ETH</h1>
-
-<br /><br />
-    <h2>Buy the Token</h2>
-    <p>Send ETH to this address: {this.state.tokenSaleAddress}</p>
-
+<br />
+       <div className="tweet"> <img src="https://gateway.pinata.cloud/ipfs/QmVxZCAvxab8bUhaScwqw6NWABmqz4jmjJ3qnYUbdKweEf/trips_T_logo256x256.png" alt="logo" width="100px"></img>
+       </div>
+        
+       <h1 className="tweet2">Welcome to this Test Token Sale<br /><i>by Luca</i></h1>
+     
    
-    <button type="button" onClick={this.handleBuyToken}>Or buy 1 Token</button>
-<br /><br />
+       <h3 className="tweet">1) Switch Metamask to Ropsten Network<br /></h3>
+       <br />
+       <div className="tweet"><img src="ropsten.png"></img></div>
 
- 
+       <br />
+       <h3 className="tweet">2) Get some test ETH <a target ="_blank" href="https://faucet.ropsten.be/">here</a></h3>
+       <br />
+       <div className="tweet"><img src="eth.png" width="100px"></img></div>
+       <br />
+    <h2 className="tweet3">Rate: 1000 TRIPS2 for 1 ETH</h2>
 
+    <h1 className="tweet2">Buy TRIPS2 in two ways:</h1>
+    
+    <h4 className="tweet">A) Click on the button below and get a 1000 TRIPS2</h4><br />
+    <button className="button" type="button" onClick={this.handleBuyToken}>Buy 1000 Tokens with 1 ETH</button><br />
+    <br /> <br />
+    <h1 className="tweet2">OR</h1>
+    <br /> <br />
 
+    <br /><h4 className="tweet">B) Send ETH to this address and buy the amount you want: {this.state.tokenSaleAddress}</h4><br />
 
+    <h5 className="tweet"> 1 ETH = 1000 TRIPS2, 0.1 ETH = 100, 0.001 ETH = 10, 0.0001 ETH = 1</h5>
+ <br /><br /><br /><br />
+ <h3 className="tweet2">That's it. That's what I can do.</h3>
+ <br /><br />
+  
       </div>
+
+      
     );
+
+    
+
+
   }
 }
 
